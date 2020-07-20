@@ -1,12 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
 import { Navbar, NavbarBrand } from 'reactstrap';
 import Menu from './components/MenuComponent';
+import {DISHES} from './shared/dishes' ;
 
-function App() {
-  return (
-    <div>
+ class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state ={
+      dishes:DISHES
+    };
+  }
+  render(){
+    return (
+      <div>
         <Navbar dark color="primary">
           <div className="container">
             <NavbarBrand href="/">
@@ -14,9 +21,10 @@ function App() {
             </NavbarBrand>
           </div>
         </Navbar>
-        <Menu />
-    </div>
-  );
+        <Menu dishes={this.state.dishes} />
+     </div>
+    );
+  }
 }
 
 export default App;

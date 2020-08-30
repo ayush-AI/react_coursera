@@ -3,19 +3,19 @@
 - ## Controlled forms using react
 
  - forms are standard way of taking data from the user.
- - forms element such as <input>, <textarea>, <button>, <select> 
+ - forms element such as <input>, <textarea>, <button>, <select>
    maintain there own state in react and update it based on the 
    user input.
  
- - Controlled components are those components in which handlers      functions are used to update the element state so that both the    state are same.
+ - Controlled components are those components in which handlers functions are used to update the element state so that both the state are same.
 
- - In controlled form the state of both the form and component are    so that every change will be reflected to the user.
+ - In controlled form the state of both the form and component are so that every change will be reflected to the user.
 
 ### Example for Creating controlled forms.
 
-- We are implementing the controlled forms in the contact component so that we will import some components from the reactstrap that will enable us to implement the form we need.
+- We are implementing the controlled forms in the contact component so that we will import some components from the reactstrap that will enable us   to
 
-```React
+```
 import { Breadcrumb, BreadcrumbItem,
             Button, Form, FormGroup, Label, Input, Col } from 'reactstrap'; 
 
@@ -29,7 +29,7 @@ note:- the component should be the class component because we need to update the
 - after creating the class component we will define some state in 
   the constructor using the below code.
 
-```React
+```html
 
  constructor(props) {
         super(props);
@@ -85,7 +85,7 @@ note:- the component should be the class component because we need to update the
 - <Col md={{size:6, offset: 2}}> here we are two properties to the 
   element so we have to pass it as javascript object.
 
-```React
+```html
  <div className="row row-content">
                    <div className="col-12">
                       <h3>Send us your Feedback</h3>
@@ -134,33 +134,33 @@ note:- the component should be the class component because we need to update the
                                         <Label check>
                                     <Input type="checkbox"
                                        name="agree"
-                                       checked=                                                          {this.state.agree}
-                                          onChange=                                                 {this.handleInputChange} /> {' '}
-                                            <strong>May we contact                                          you?</strong>
+                                       checked={this.state.agree}
+                                          onChange= {this.handleInputChange} /> {' '}
+                                            <strong>May we contact you?</strong>
                                         </Label>
                                     </FormGroup>
                                 </Col>
                                 <Col md={{size: 3, offset: 1}}>
-                                    <Input type="select"                                      name="contactType"
-                                            value=                                        {this.state.contactType}
-                                            onChange=                                        {this.handleInputChange}>
+                                    <Input type="select" name="contactType"
+                                            value={this.state.contactType}
+                                            onChange={this.handleInputChange}>
                                         <option>Tel.</option>
                                         <option>Email</option>
                                     </Input>
                                 </Col>
                             </FormGroup>
                             <FormGroup row>
-                                <Label htmlFor="message" md={2}                                >Your Feedback</Label>
+                                <Label htmlFor="message" md={2}>Your Feedback</Label>
                                 <Col md={10}>
-                                    <Input type="textarea"                                     id="message" name="message"
+                                    <Input type="textarea"id="message" name="message"
                                         rows="12"
                                         value={this.state.message}
-                                        onChange=                                 {this.handleInputChange}></Input>
+                                        onChange={this.handleInputChange}></Input>
                                 </Col>
                             </FormGroup>
                             <FormGroup row>
                                 <Col md={{size: 10, offset: 2}}>
-                                    <Button type="submit"                                      color="primary">
+                                    <Button type="submit" color="primary">
                                         Send Feedback
                                     </Button>
                                 </Col>

@@ -1,6 +1,6 @@
 # REACT
 
-- ## Controlled forms using react
+## Controlled forms using react
 
  - forms are standard way of taking data from the user.
  - forms element such as <input>, <textarea>, <button>, <select>
@@ -29,7 +29,7 @@ note:- the component should be the class component because we need to update the
 - after creating the class component we will define some state in 
   the constructor using the below code.
 
-```html
+```
 
  constructor(props) {
         super(props);
@@ -75,7 +75,7 @@ note:- the component should be the class component because we need to update the
   user.
  - handleSubmit is the method for handeling the submission of the   form and preventing the page from reloading.
 
-#### Meaning of the some code snippets
+### Meaning of the some code snippets
 
 - <FormGroup row> here defines the one row of the form. 
 - <Col md={10}> col in ReactStrap is same as the div tag in 
@@ -85,7 +85,7 @@ note:- the component should be the class component because we need to update the
 - <Col md={{size:6, offset: 2}}> here we are two properties to the 
   element so we have to pass it as javascript object.
 
-```html
+```
  <div className="row row-content">
                    <div className="col-12">
                       <h3>Send us your Feedback</h3>

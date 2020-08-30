@@ -70,10 +70,10 @@ note:- the component should be the class component because we need to update the
 ### Code snippets explained 
  - this.state represents the current state of the function.
  
- -handleInputChange is a method that is used for updating the 
+ - handleInputChange is a method that is used for updating the 
   state of the form component so the change can be seen by the 
   user.
- -handleSubmit is the method for handeling the submission of the   form and preventing the page from reloading.
+ - handleSubmit is the method for handeling the submission of the   form and preventing the page from reloading.
 
 #### Meaning of the some code snippets
 
